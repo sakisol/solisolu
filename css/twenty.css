@@ -37,3 +37,22 @@ body {
   height: 280px;
   width: 336px;
 }
+
+.socials {
+}
+
+.socials img {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  height: 25px;
+  float: right;
+}
+
+.email {
+  padding-right: 15px;
+}
+
+.git img {
+  float: right;
+}
