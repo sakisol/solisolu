@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(235, 242, 238);
+  /* background-color: rgb(210, 218, 212); */
+  font-family: "Text Me One", sans-serif;
+}
+
+.heading {
+  height: 30vh;
+}
+
+.midsect {
+  height: 65vh;
+}
+
+.green {
+  text-align: center;
+}
+
+.green img {
+  filter: opacity(80%);
+  box-shadow: 20px 15px 10px -3px grey;
+}
+
+.green:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+.saki {
+  text-align: right;
+  color: rgb(154, 194, 172);
+  font-family: "Text Me One", sans-serif;
+}
+
+.girona img {
+  height: 280px;
+  width: 336px;
+}
