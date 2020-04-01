@@ -21,11 +21,11 @@ body {
   box-shadow: 20px 15px 10px -3px grey;
 }
 
-.green:hover {
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
+/* .green:hover {
+  -ms-transform: scale(1.1); /* IE 9 
+  -webkit-transform: scale(1.1); /* Safari 3-8 
   transform: scale(1.1);
-}
+} */
 
 .saki {
   text-align: right;
@@ -36,9 +36,6 @@ body {
 .girona img {
   height: 280px;
   width: 336px;
-}
-
-.socials {
 }
 
 .socials img {
