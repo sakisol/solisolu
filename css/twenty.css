@@ -1,7 +1,19 @@
 body {
-  background-color: rgb(235, 242, 238);
+  /* background-color: rgb(235, 242, 238); */
   /* background-color: rgb(210, 218, 212); */
   font-family: "Text Me One", sans-serif;
+
+  background: rgb(235, 242, 238); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #71b280,
+    #134e5e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #71b280,
+    #134e5e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .heading {
@@ -18,7 +30,8 @@ body {
 
 .green img {
   filter: opacity(80%);
-  box-shadow: 20px 15px 10px -3px grey;
+  box-shadow: 8px 8px 10px rgb(94, 114, 103);
+  max-width: 100%;
 }
 
 /* .green:hover {
