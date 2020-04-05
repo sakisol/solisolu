@@ -1,11 +1,11 @@
 body {
-  /* background-color: rgb(235, 242, 238); */
-  /* background-color: rgb(210, 218, 212); */
   font-family: "Text Me One", sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 
 .homeground {
-  background: rgb(235, 242, 238); /* fallback for old browsers */
+  /* background: rgb(235, 242, 238); fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
     #71b280,
@@ -36,21 +36,21 @@ body {
   max-width: 100%;
 }
 
-/* .green:hover {
-  -ms-transform: scale(1.1); /* IE 9 
-  -webkit-transform: scale(1.1); /* Safari 3-8 
-  transform: scale(1.1);
-} */
-
 .saki {
   text-align: right;
   color: rgb(154, 194, 172);
   font-family: "Text Me One", sans-serif;
 }
 
+.tiles {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
 .girona img {
-  height: 280px;
-  width: 336px;
+  height: 350px;
+  max-width: 100%;
 }
 
 .socials img {
@@ -63,10 +63,6 @@ body {
 
 .link img {
   height: 30px;
-}
-
-.email {
-  padding-right: 15px;
 }
 
 .git img {
