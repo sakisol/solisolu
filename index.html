@@ -36,59 +36,174 @@
     <title>solis solutions</title>
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="row heading">
-        <div class="row">
-          <div class="col socials">
-            <span>
-              <a href="mailto:saki@solisolu.com?subject=Hi Saki%20">
-                <img class="email" src="img/email.png"
-              /></a>
-            </span>
-            <span>
-              <a href="https://www.linkedin.com/in/saki9/" target="_blank">
-                <img src="img/In-Blue-34.png" />
-              </a>
-            </span>
+    <div id="app">
+      <div class="container-fluid">
+        <div v-if="view == 'home'" class="homeground">
+          <div class="row heading">
+            <div class="col socials">
+              <span>
+                <a href="https://github.com/sakisol" target="_blank">
+                  <img src="img/GitHub-Mark-64px.png"
+                /></a>
+              </span>
 
-            <span>
-              <a
-                href="https://www.instagram.com/solisolutions/"
-                target="_blank"
-              >
-                <img src="img/glyph-logo_May2016.png"
-              /></a>
-            </span>
+              <span>
+                <a
+                  href="https://www.instagram.com/solisolutions/"
+                  target="_blank"
+                >
+                  <img src="img/glyph-logo_May2016.png"
+                /></a>
+              </span>
 
-            <span>
-              <a href="https://github.com/sakisol" target="_blank">
-                <img src="img/GitHub-Mark-64px.png"
-              /></a>
-            </span>
+              <span>
+                <a href="mailto:saki@solisolu.com?subject=Hi Saki%20">
+                  <img class="email" src="img/email.png"
+                /></a>
+              </span>
+              <span class="link">
+                <a href="https://www.linkedin.com/in/saki9/" target="_blank">
+                  <img src="img/linkedin.png" />
+                </a>
+              </span>
+
+              <span>
+                <a
+                  class=""
+                  @click="view ='eyes'"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  ><img src="img/eye.png"
+                /></a>
+              </span>
+            </div>
+          </div>
+          <!-- end of div heading -->
+          <div class="row midsect">
+            <div class="col green">
+              <img src="img/greenL.png" />
+            </div>
+            <div class="col green">
+              <img src="img/greenM2.png" />
+            </div>
+            <div class="col green">
+              <img src="img/greenR2.png" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 saki">
+              <p>site code/design by Saki</p>
+            </div>
+          </div>
+          <!-- end of div class row -->
+        </div>
+        <!-- end of div HOME view -->
+        <div v-if="view == 'eyes'">
+          <div class="row heading">
+            <div class="col socials">
+              <span>
+                <a
+                  class=""
+                  @click="view ='home'"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  ><img src="img/eye.png"
+                /></a>
+              </span>
+
+              <span class="link">
+                <a href="https://www.linkedin.com/in/saki9/" target="_blank">
+                  <img src="img/linkedin.png" />
+                </a>
+              </span>
+              <span>
+                <a href="mailto:saki@solisolu.com?subject=Hi Saki%20">
+                  <img class="email" src="img/email.png"
+                /></a>
+              </span>
+
+              <span>
+                <a
+                  href="https://www.instagram.com/solisolutions/"
+                  target="_blank"
+                >
+                  <img src="img/glyph-logo_May2016.png"
+                /></a>
+              </span>
+
+              <span>
+                <a href="https://github.com/sakisol" target="_blank">
+                  <img src="img/GitHub-Mark-64px.png"
+                /></a>
+              </span>
+            </div>
+          </div>
+          <h6>
+            Changing the perspective of elements that I see while out and
+            about...
+          </h6>
+
+          <hr />
+          <h6>PONT DE FERRO: Girona, 2019</h6>
+          <div class="row col-12">
+            <div class="col-4 girona">
+              <img src="/img/girona1.jpg" />
+            </div>
+            <div class="col-4 girona">
+              <img src="/img/girona0.jpg" />
+            </div>
+            <div class="col-4 girona">
+              <img src="/img/girona2.jpg" />
+            </div>
+          </div>
+          <hr />
+          <h6>FERRIS WHEEL: Barcelona, 2018</h6>
+          <div class="row">
+            <div class="col">
+              <img src="/img/carousel2.png" />
+            </div>
+            <div class="col">
+              <img src="/img/carousel.png" />
+            </div>
+            <div class="col">
+              <img src="/img/carousel3.png" />
+            </div>
+          </div>
+
+          <hr />
+          <h6>FLOWERS: Amsterdam, 2018</h6>
+          <div class="row">
+            <div class="col">
+              <img src="/img/amsterdamflowers.png" />
+            </div>
+            <div class="col">
+              <img src="/img/amsterdamflowers2.png" />
+            </div>
+            <div class="col">
+              <img src="/img/amsterdamflowers3.png" />
+            </div>
+          </div>
+
+          <hr />
+          <h6>OCEAN: Bermuda, 2017</h6>
+          <div class="row">
+            <div class="col">
+              <img src="/img/waves.png" />
+            </div>
+            <div class="col">
+              <img src="/img/waves2.png" />
+            </div>
+            <div class="col">
+              <img src="/img/waves3.png" />
+            </div>
           </div>
         </div>
+        <!-- end of div EYES view -->
       </div>
-      <div class="row midsect">
-        <div class="col green">
-          <img src="img/greenL.png" />
-        </div>
-        <div class="col green">
-          <img src="img/greenM2.png" />
-        </div>
-        <div class="col green">
-          <img src="img/greenR2.png" />
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12 saki">
-          <p>site code/design by Saki</p>
-        </div>
-      </div>
-
-      <!-- end of div class row -->
+      <!-- end of div class container-fluid -->
     </div>
-    <!-- end of div class container -->
+    <!-- end of div id APP -->
 
     <!-- SCRIPTS -->
     <script
@@ -106,6 +221,9 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <!-- VUE.js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
     <script src="js/main.js"></script>
   </body>
